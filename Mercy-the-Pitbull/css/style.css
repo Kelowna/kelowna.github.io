@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.main-nav {
+  width: 100%;
+  background-color: #333;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  background-color: #777;
+}
+
+@media (max-width: 640px) {
+  .nav-links {
+    justify-content: center;
+  }
+}
+
+.top-image-row {
+  width: 100%;
+}
+
+.our-airstream {
+  width: 100%;
+  aspect-ratio: 16 / 6;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #d8d8d8, #efefef);
+  border-bottom: 1px solid #c9c9c9;
+  color: #444;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 1024px) {
+  .our-airstream {
+    aspect-ratio: 16 / 7;
+    min-height: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .our-airstream {
+    aspect-ratio: 16 / 9;
+    min-height: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .our-airstream {
+    min-height: 120px;
+  }
+}
