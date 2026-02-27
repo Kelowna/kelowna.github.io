@@ -55,6 +55,16 @@ body {
   border: 3px solid lightgrey;
 }
 
+@media (max-width: 1024px) {
+  .airstream-custom-row {
+    flex-direction: column;
+  }
+
+  .airstream-custom-column {
+    flex: 1 1 100%;
+  }
+}
+
 .our-airstream {
   width: 100%;
   aspect-ratio: 16 / 6;
